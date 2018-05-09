@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provider Support</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href='#'>
+                @Html.ActionLink("Overview", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </a>
+         <!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li>@Html.ActionLink("Providers", "Index", "Provider")</li>
+                    <li>@Html.ActionLink("Clients", "Index", "Client")</li>
+                    <li>@Html.ActionLink("Transactions", "Index", "Transaction")</li>
+                    <li>@Html.ActionLink("Invoices", "Index", "Invoice")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -  Provider Support</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
