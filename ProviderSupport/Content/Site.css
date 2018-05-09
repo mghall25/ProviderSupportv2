@@ -24,11 +24,12 @@ textarea {
 }
 
 /* make navbar links white*/
-.navbar a,
-.navbar ul,
-.navbar li,
-li a {
-    color: white!important;
+.navbar,
+.navbar-nav,
+ul a,
+li a,
+.nav-link {
+    color: white !important;
     text-decoration: none;
     padding: 15px 10px 15px 0px;
     font-size: 1.5rem;
