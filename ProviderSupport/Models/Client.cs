@@ -60,6 +60,15 @@ namespace ProviderSupport.Models
         [Display(Name ="Archived?")]
         public bool? Archived { get; set; }
 
+        [Display(Name = "Client Name")]
+        public string ClientFullName
+        {
+            get
+            {
+                return FirstName.Trim() + " " + LastName.Trim();
+            }
+        }
+
         public virtual CounsPa CounsPa { get; set; }
         public virtual ICollection<Transaction> Transactions { get; set; }
     }

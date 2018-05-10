@@ -45,12 +45,12 @@ namespace ProviderSupport.Models
 
         public bool? Archived { get; set; }
 
-        [Display(Name = "Full Name")]
+        [Display(Name = "Provider Name")]
         public string FullName
         {
             get
             {
-                return FirstName + " " + LastName;
+                return FirstName.Trim() + " " + LastName.Trim();
             }
         }
 

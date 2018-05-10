@@ -320,3 +320,5 @@ C:\Users\mmjlh\Documents\Visual Studio 2017\ProviderSupportv2\ProviderSupport\ob
 C:\Users\mmjlh\Documents\Visual Studio 2017\ProviderSupportv2\ProviderSupport\obj\Debug\ProviderSupport.csproj.CopyComplete
 C:\Users\mmjlh\Documents\Visual Studio 2017\ProviderSupportv2\ProviderSupport\obj\Debug\ProviderSupport.dll
 C:\Users\mmjlh\Documents\Visual Studio 2017\ProviderSupportv2\ProviderSupport\obj\Debug\ProviderSupport.pdb
+C:\Users\mmjlh\Documents\Visual Studio 2017\ProviderSupportv2\ProviderSupport\obj\Debug\ProviderSupport.Migrations.AddTransDisplayNames.resources
+C:\Users\mmjlh\Documents\Visual Studio 2017\ProviderSupportv2\ProviderSupport\obj\Debug\ProviderSupport.Migrations.ClientFullName.resources

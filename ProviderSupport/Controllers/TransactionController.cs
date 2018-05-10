@@ -41,7 +41,7 @@ namespace ProviderSupport.Controllers
         // GET: Transaction/Create
         public ActionResult Create()
         {
-            ViewBag.ClientID = new SelectList(db.Clients, "ClientID", "PrimeNo");
+            ViewBag.ClientID = new SelectList(db.Clients, "ClientID", "ClientFullName");
             ViewBag.ProviderID = new SelectList(db.Providers, "ProviderID", "FullName");
             ViewBag.ServiceTypeID = new SelectList(db.ServiceTypes, "ServiceTypeID", "Desc");
             ViewBag.ServiceTypeEmplID = new SelectList(db.ServiceTypeEmpls, "ServiceTypeEmplID", "Desc");

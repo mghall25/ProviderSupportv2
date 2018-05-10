@@ -190,6 +190,14 @@
     <Compile Include="Migrations\201805090446321_AddBackRequiredFields.Designer.cs">
       <DependentUpon>201805090446321_AddBackRequiredFields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805100535387_AddTransDisplayNames.cs" />
+    <Compile Include="Migrations\201805100535387_AddTransDisplayNames.Designer.cs">
+      <DependentUpon>201805100535387_AddTransDisplayNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805100541399_ClientFullName.cs" />
+    <Compile Include="Migrations\201805100541399_ClientFullName.Designer.cs">
+      <DependentUpon>201805100541399_ClientFullName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BillToOrg.cs" />
     <Compile Include="Models\Client.cs" />
@@ -216,6 +224,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\community-icon.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -303,6 +312,7 @@
     <Content Include="Views\Client\Edit.cshtml" />
     <Content Include="Views\Client\Index.cshtml" />
     <Content Include="Views\Transaction\Create.cshtml" />
+    <Content Include="Views\Transaction\Create - orig.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -332,6 +342,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805090446321_AddBackRequiredFields.resx">
       <DependentUpon>201805090446321_AddBackRequiredFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805100535387_AddTransDisplayNames.resx">
+      <DependentUpon>201805100535387_AddTransDisplayNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805100541399_ClientFullName.resx">
+      <DependentUpon>201805100541399_ClientFullName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
