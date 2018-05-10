@@ -48,17 +48,13 @@
         </div>
     </div>
 
-    <!--<div>------------------- Using RadioButtonFor ------------------</div>
+    <div>------------------- Using RadioButtonFor ------------------</div>
     @*<h1>@ViewBag.ServiceTypeList</h1>*@
     
-
-    foreach (var item in ViewBag.ServiceTypeList)
+    @foreach (var item in ViewBag.ServiceTypeList)
     {
-        <div>
-            <p>ViewBag.ServiceTypeList[0].</p>
-        </div>
-    }
-    -->
+        <p>@item.Desc</p>           
+    } 
 
     <h4>Hours Worked</h4>
     <div class="input-line">
