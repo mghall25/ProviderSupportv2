@@ -40,13 +40,16 @@ namespace ProviderSupport.Controllers
 
         // GET: Transaction/Create
         public ActionResult Create()
-        {
+        {            
             ViewBag.ClientID = new SelectList(db.Clients, "ClientID", "ClientFullName");
             ViewBag.ProviderID = new SelectList(db.Providers, "ProviderID", "FullName");
             ViewBag.ServiceTypeID = new SelectList(db.ServiceTypes, "ServiceTypeID", "Desc");
             ViewBag.ServiceTypeEmplID = new SelectList(db.ServiceTypeEmpls, "ServiceTypeEmplID", "Desc");
-                      
-            //ViewBag.ServiceTypeID = db.ServiceTypes.ToList();   
+
+            // TRY: create a list of servicetypes here and use it in the view
+            // for use in creating radio button
+            ViewBag.ServiceTypeList = db.ServiceTypes.ToList();
+
             return View();
         }
 

@@ -83,7 +83,7 @@ namespace ProviderSupport.Models
         public DateTime? WhenSentToExprs { get; set; }
 
         public DateTime? WhenPaidToPayroll { get; set; }
-        
+
         public virtual Provider Provider { get; set; }
         public virtual Client Client { get; set; }
         public virtual ServiceType ServiceType { get; set; }
